@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 public class DebuggingAspect {
 
     // 대상 메소드 선택: CommentService#create()
-    @Pointcut("execution(* com.example.firstSpringproject.service.CommentService.*(..))")
+    @Pointcut("execution(* com.example.firstSpringproject.api.*.*(..))")
     private void cut() {
 
     }
